@@ -1,0 +1,426 @@
+@font-face {
+    font-family: 'Spartan';
+    src: url('assets/fonts/Spartan-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Spartan-Bold';
+    src: url('assets/fonts/Spartan-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Spartan-Light';
+    src: url('assets/fonts/Spartan-ExtraLight.ttf') format('truetype');
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    line-height: 1.5;
+}
+
+body{
+    background-color: #0D0C4E;
+}
+
+.home{
+    height: 100vh;
+    background-image: url('assets/img/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+}
+
+.nav{
+    height: 45px;
+    padding: 20px 0;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container, .logo-container > img{
+    height: 100%;
+}
+
+.scrollable{
+    position: absolute;
+}
+
+.header{
+    padding: 5rem;
+    /* height: calc( 65px - 100vh); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text{
+    width: 40%;
+    padding-top: 5rem;
+    /* display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between; */
+}
+
+.header-text-container{
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-img{
+    /* padding-top: 5rem; */
+    width: 50%;
+}
+
+.header-img > img{
+    width: 100%;
+}
+
+.header-text-container > h1{
+    color: white;
+    font-family: 'Spartan-Bold';
+    margin-bottom: 1rem;
+    font-size: 50px;
+}
+
+.header-text-container > p{
+    color: white;
+    font-family: 'Spartan';
+    margin-bottom: 1.5rem;
+}
+
+.header-text-container > a{
+    color: white;
+    font-family: 'Spartan';
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: max-content;
+    border: 2px solid white;
+    margin-bottom: 5rem;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+}
+
+.social-icons > .circle {
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+    background-color: #26255A;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons > .circle > i{
+    font-size: 15px;
+    position: absolute;
+}
+
+.about{
+    padding: 5rem;
+    color: white;
+}
+
+.about > h1 {
+    font-size: 100px;
+    font-family: 'Spartan-Light';
+}
+
+.about > p {
+    font-family: 'Spartan';
+}
+
+.education{
+    padding: 5rem;
+    color: white;
+}
+
+.education > h1,
+.skills > h1,
+.trainings > h1,
+.connect > h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Spartan';
+    margin-bottom: 2.5rem;
+}
+
+.education-container{
+    color: #0D0C4E;
+    display: flex;
+    justify-content: center;
+}
+
+.education-container > .education-box{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+}
+
+.education-container > .education-box > .education-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.education-card > .card-img{
+    width: 100%;
+    height: 200px;
+}
+
+.card-img > .img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-img > .img > p{
+    color: white;
+    z-index: 10000;
+    font-family: 'Spartan-Bold';
+    padding: 0 10px 10px;
+    /* bottom: 0; */
+}
+
+.card-text{
+    padding: 10px;
+    color: black;
+}
+
+.card-text > p:nth-child(1){
+    font-weight: bold;
+    font-family: 'Spartan-Bold';
+}
+
+.card-text > p:nth-child(2){
+    font-size: 10px;
+    font-family: 'Spartan';
+}
+
+.card-footer{
+    padding: 0 10px 10px 10px;
+    color: black;
+    font-size: 10px;
+    font-family: 'Spartan';
+}
+
+.skills{
+    padding: 5rem;
+    color: white;
+}
+
+.skills-container{
+    color: #0D0C4E;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-container > .skills-box{
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+}
+
+.skills-container > .skills-box > .skills-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.skills-box:nth-child(1) > .skills-card{
+    border-top: 10px solid #ff6fbd;
+
+}
+
+.skills-box:nth-child(2) > .skills-card{
+    border-top: 10px solid #13eacd;
+
+}
+
+.skills-card > .card-text > p:nth-child(1){
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.skills-card > .card-text > .list{
+    font-family: 'Spartan';
+    font-size: 15px;
+}
+
+.skills-card > .card-text > .list > p:before{
+    content: "+";
+    margin-right: 5px;
+}
+
+.trainings{
+    padding: 5rem;
+    color: white;
+}
+
+.trainings-container{
+    color: #0D0C4E;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+
+}
+
+.trainings-container > .trainings-box{
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+}
+
+.trainings-container > .trainings-box > .trainings-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.trainings-card > .card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.trainings-card > .card-img > .img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.trainings-card > .card-img > .img > p{
+    color: white;
+    z-index: 10000;
+    font-family: 'Spartan-Bold';
+    padding: 0 10px 10px;
+    /* bottom: 0; */
+}
+
+.connect{
+    padding: 5rem;
+    color: white;
+}
+
+.connect-icons{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5rem;
+}
+
+.connect-icons > .circle-icons {
+    width: 80px;
+    height: 80px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #26255A;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-icons > .circle-icons > i{
+    font-size: 40px;
+    position: absolute;
+}
+
+.connect-container{
+    color: #0D0C4E;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connect-container > .connect-box{
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+}
+
+.connect-container > .connect-box > .connect-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.connect-card > .card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.connect-card > .card-img > .img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    align-content: space-between;
+}
+
+.connect-card > .card-img > .img > p{
+    color: white;
+    z-index: 10000;
+    font-family: 'Spartan-Bold';
+    padding: 0 10px 10px;
+    /* bottom: 0; */
+}
+
+.connect-card > .card-img > .img > img{
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.connect-card > .card-img > .img > a{
+    border-radius: 20px;
+    border: 1px solid white;
+    width: max-content;
+    padding: 5px 20px;
+    color: white;
+    font-family: 'Spartan';
+    font-size: 10px;
+}
+
